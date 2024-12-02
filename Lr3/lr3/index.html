@@ -1,0 +1,1178 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Lr1/task5/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Task - WEB labs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="WEB labs" class="md-header__button md-logo" aria-label="WEB labs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            WEB labs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Task
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="WEB labs" class="md-nav__button md-logo" aria-label="WEB labs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    WEB labs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lab 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr1/task5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lab 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lr2/lr2.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Task
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lab 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Lab 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Task
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Task
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Введение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Модели данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Employee (Сотрудник)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Author (Автор)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Book (Книга)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bookauthor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель BookAuthor (Автор книги)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Edition (Издание)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Contract (Контракт)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editioneditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель EditionEditor (Редактор издания)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Customer (Заказчик)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Order (Заказ)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orderitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель OrderItem (Позиция заказа)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Соответствие требованиям задания
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Запросы и отчёты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Заключение
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Введение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Модели данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Employee (Сотрудник)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#author" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Author (Автор)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#book" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Book (Книга)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bookauthor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель BookAuthor (Автор книги)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Edition (Издание)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Contract (Контракт)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editioneditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель EditionEditor (Редактор издания)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Customer (Заказчик)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель Order (Заказ)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orderitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель OrderItem (Позиция заказа)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Соответствие требованиям задания
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Запросы и отчёты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Заключение
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">Документация системы управления типографией</h1>
+<h2 id="_2">Введение</h2>
+<p>Данная система предназначена для информационного обслуживания редакторов, менеджеров и других сотрудников типографии. База данных содержит данные о сотрудниках компании, книгах, авторах, финансовом состоянии компании и предоставляет возможность получать разнообразные отчёты.</p>
+<h2 id="_3">Модели данных</h2>
+<h3 id="employee">Модель <code>Employee</code> (Сотрудник)</h3>
+<p><strong>Описание:</strong></p>
+<p>Хранит информацию о сотрудниках компании, включая их роль в типографии.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>first_name</code> (<code>CharField</code>, <code>max_length=50</code>): Имя сотрудника.</li>
+<li><code>last_name</code> (<code>CharField</code>, <code>max_length=50</code>): Фамилия сотрудника.</li>
+<li><code>role</code> (<code>CharField</code>, <code>max_length=20</code>, <code>choices=Role.choices</code>): Роль сотрудника (Менеджер, Редактор, Другое).</li>
+<li><code>email</code> (<code>EmailField</code>, <code>unique=True</code>): Электронная почта сотрудника.</li>
+<li><code>phone_number</code> (<code>CharField</code>, <code>max_length=20</code>, <code>blank=True</code>): Номер телефона.</li>
+<li><code>address</code> (<code>CharField</code>, <code>max_length=255</code>, <code>blank=True</code>): Адрес.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>verbose_name</code>: "Employee"</li>
+<li><code>verbose_name_plural</code>: "Employees"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает полное имя сотрудника.</li>
+</ul>
+<h3 id="author">Модель <code>Author</code> (Автор)</h3>
+<p><strong>Описание:</strong></p>
+<p>Хранит информацию об авторах книг.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>first_name</code> (<code>CharField</code>, <code>max_length=50</code>): Имя автора.</li>
+<li><code>last_name</code> (<code>CharField</code>, <code>max_length=50</code>): Фамилия автора.</li>
+<li><code>biography</code> (<code>TextField</code>, <code>blank=True</code>): Биография автора.</li>
+<li><code>email</code> (<code>EmailField</code>, <code>unique=True</code>, <code>blank=True</code>, <code>null=True</code>): Электронная почта.</li>
+<li><code>phone_number</code> (<code>CharField</code>, <code>max_length=20</code>, <code>blank=True</code>): Номер телефона.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>verbose_name</code>: "Author"</li>
+<li><code>verbose_name_plural</code>: "Authors"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает полное имя автора.</li>
+</ul>
+<h3 id="book">Модель <code>Book</code> (Книга)</h3>
+<p><strong>Описание:</strong></p>
+<p>Хранит информацию о книгах.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>title</code> (<code>CharField</code>, <code>max_length=200</code>): Название книги.</li>
+<li><code>authors</code> (<code>ManyToManyField</code> к <code>Author</code> через <code>BookAuthor</code>): Авторы книги.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>verbose_name</code>: "Book"</li>
+<li><code>verbose_name_plural</code>: "Books"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает название книги.</li>
+</ul>
+<h3 id="bookauthor">Модель <code>BookAuthor</code> (Автор книги)</h3>
+<p><strong>Описание:</strong></p>
+<p>Промежуточная модель для связи многих ко многим между <code>Book</code> и <code>Author</code> с дополнительными полями.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>book</code> (<code>ForeignKey</code> к <code>Book</code>): Ссылка на книгу.</li>
+<li><code>author</code> (<code>ForeignKey</code> к <code>Author</code>): Ссылка на автора.</li>
+<li><code>order</code> (<code>PositiveIntegerField</code>): Порядок автора на обложке (влияет на размер гонорара).</li>
+<li><code>royalty_percentage</code> (<code>DecimalField</code>, <code>max_digits=5</code>, <code>decimal_places=2</code>): Процент гонорара.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>unique_together</code>: ('book', 'author')</li>
+<li><code>ordering</code>: ['order']</li>
+<li><code>verbose_name</code>: "Book Author"</li>
+<li><code>verbose_name_plural</code>: "Book Authors"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает информацию об авторе и книге с указанием порядка на обложке.</li>
+</ul>
+<h3 id="edition">Модель <code>Edition</code> (Издание)</h3>
+<p><strong>Описание:</strong></p>
+<p>Хранит информацию об изданиях книг.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>book</code> (<code>ForeignKey</code> к <code>Book</code>): Ссылка на книгу.</li>
+<li><code>edition_number</code> (<code>PositiveIntegerField</code>): Номер издания.</li>
+<li><code>publication_date</code> (<code>DateField</code>): Дата публикации.</li>
+<li><code>number_of_pages</code> (<code>PositiveIntegerField</code>): Количество страниц.</li>
+<li><code>has_illustrations</code> (<code>BooleanField</code>, <code>default=False</code>): Наличие иллюстраций.</li>
+<li><code>editors</code> (<code>ManyToManyField</code> к <code>Employee</code> через <code>EditionEditor</code>): Редакторы издания.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>unique_together</code>: ('book', 'edition_number')</li>
+<li><code>verbose_name</code>: "Edition"</li>
+<li><code>verbose_name_plural</code>: "Editions"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает название книги и номер издания.</li>
+</ul>
+<h3 id="contract">Модель <code>Contract</code> (Контракт)</h3>
+<p><strong>Описание:</strong></p>
+<p>Хранит информацию о контрактах на издание книг.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>edition</code> (<code>OneToOneField</code> к <code>Edition</code>): Ссылка на издание.</li>
+<li><code>manager</code> (<code>ForeignKey</code> к <code>Employee</code>): Менеджер, подписавший контракт.</li>
+<li><code>date_signed</code> (<code>DateField</code>): Дата подписания контракта.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>verbose_name</code>: "Contract"</li>
+<li><code>verbose_name_plural</code>: "Contracts"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает информацию о контракте и издании.</li>
+</ul>
+<h3 id="editioneditor">Модель <code>EditionEditor</code> (Редактор издания)</h3>
+<p><strong>Описание:</strong></p>
+<p>Промежуточная модель для связи многих ко многим между <code>Edition</code> и <code>Employee</code> с дополнительными полями.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>edition</code> (<code>ForeignKey</code> к <code>Edition</code>): Ссылка на издание.</li>
+<li><code>editor</code> (<code>ForeignKey</code> к <code>Employee</code>): Ссылка на редактора.</li>
+<li><code>is_responsible_editor</code> (<code>BooleanField</code>, <code>default=False</code>): Является ли ответственным редактором.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>unique_together</code>: ('edition', 'editor')</li>
+<li><code>verbose_name</code>: "Edition Editor"</li>
+<li><code>verbose_name_plural</code>: "Edition Editors"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает информацию о редакторе и издании с указанием роли.</li>
+</ul>
+<h3 id="customer">Модель <code>Customer</code> (Заказчик)</h3>
+<p><strong>Описание:</strong></p>
+<p>Хранит информацию о заказчиках.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>name</code> (<code>CharField</code>, <code>max_length=100</code>): Наименование заказчика.</li>
+<li><code>email</code> (<code>EmailField</code>, <code>unique=True</code>): Электронная почта.</li>
+<li><code>phone_number</code> (<code>CharField</code>, <code>max_length=20</code>, <code>blank=True</code>): Номер телефона.</li>
+<li><code>address</code> (<code>CharField</code>, <code>max_length=255</code>, <code>blank=True</code>): Адрес.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>verbose_name</code>: "Customer"</li>
+<li><code>verbose_name_plural</code>: "Customers"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает наименование заказчика.</li>
+</ul>
+<h3 id="order">Модель <code>Order</code> (Заказ)</h3>
+<p><strong>Описание:</strong></p>
+<p>Хранит информацию о заказах на покупку книг.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>customer</code> (<code>ForeignKey</code> к <code>Customer</code>): Ссылка на заказчика.</li>
+<li><code>date_ordered</code> (<code>DateField</code>): Дата заказа.</li>
+<li><code>items</code> (<code>ManyToManyField</code> к <code>Edition</code> через <code>OrderItem</code>): Позиции заказа.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>verbose_name</code>: "Order"</li>
+<li><code>verbose_name_plural</code>: "Orders"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает идентификатор заказа и имя заказчика.</li>
+</ul>
+<h3 id="orderitem">Модель <code>OrderItem</code> (Позиция заказа)</h3>
+<p><strong>Описание:</strong></p>
+<p>Промежуточная модель для связи многих ко многим между <code>Order</code> и <code>Edition</code> с дополнительным полем количества.</p>
+<p><strong>Поля:</strong></p>
+<ul>
+<li><code>order</code> (<code>ForeignKey</code> к <code>Order</code>): Ссылка на заказ.</li>
+<li><code>edition</code> (<code>ForeignKey</code> к <code>Edition</code>): Ссылка на издание.</li>
+<li><code>quantity</code> (<code>PositiveIntegerField</code>, <code>default=1</code>): Количество единиц товара.</li>
+</ul>
+<p><strong>Метаданные:</strong></p>
+<ul>
+<li><code>unique_together</code>: ('order', 'edition')</li>
+<li><code>verbose_name</code>: "Order Item"</li>
+<li><code>verbose_name_plural</code>: "Order Items"</li>
+</ul>
+<p><strong>Методы:</strong></p>
+<ul>
+<li><code>__str__()</code>: Возвращает количество и информацию об издании в заказе.</li>
+</ul>
+<h2 id="_4">Соответствие требованиям задания</h2>
+<ul>
+<li><strong>Каждая книга издаётся в рамках контракта:</strong></li>
+<li>
+<p>Модель <code>Contract</code> связывает издание (<code>Edition</code>) с менеджером и датой подписания.</p>
+</li>
+<li>
+<p><strong>Книга может быть написана несколькими авторами:</strong></p>
+</li>
+<li>
+<p>Связь <code>ManyToManyField</code> между <code>Book</code> и <code>Author</code> через <code>BookAuthor</code>.</p>
+</li>
+<li>
+<p><strong>Контракт подписывается одним менеджером и всеми авторами книги:</strong></p>
+</li>
+<li>
+<p>Модель <code>Contract</code> связывает менеджера и издание; авторы связаны через <code>BookAuthor</code>.</p>
+</li>
+<li>
+<p><strong>Каждый автор может написать несколько книг (по разным контрактам):</strong></p>
+</li>
+<li>
+<p>Авторы могут быть связаны с несколькими книгами через <code>BookAuthor</code>.</p>
+</li>
+<li>
+<p><strong>Порядок, в котором авторы указаны на обложке, влияет на размер гонорара:</strong></p>
+</li>
+<li>
+<p>Поля <code>order</code> и <code>royalty_percentage</code> в модели <code>BookAuthor</code> отражают порядок и гонорар.</p>
+</li>
+<li>
+<p><strong>Если сотрудник является редактором, то он может работать одновременно над несколькими книгами:</strong></p>
+</li>
+<li>
+<p>Связь <code>ManyToManyField</code> между <code>Edition</code> и <code>Employee</code> через <code>EditionEditor</code> позволяет редакторам работать над несколькими изданиями.</p>
+</li>
+<li>
+<p><strong>У каждой книги может быть несколько редакторов, один из них — ответственный редактор:</strong></p>
+</li>
+<li>
+<p>Поле <code>is_responsible_editor</code> в модели <code>EditionEditor</code> отмечает ответственного редактора.</p>
+</li>
+<li>
+<p><strong>Каждый заказ оформляется на одного заказчика; в заказе может быть перечислено несколько книг:</strong></p>
+</li>
+<li>Модель <code>Order</code> связывает заказчика и заказанные издания через <code>OrderItem</code>.</li>
+</ul>
+<h2 id="_5">Запросы и отчёты</h2>
+<ul>
+<li><strong>Список всех изданных книг заданного автора:</strong></li>
+<li>
+<p>Фильтрация модели <code>Book</code> по связанным авторам.</p>
+</li>
+<li>
+<p><strong>Список ответственных редакторов для всех изданий:</strong></p>
+</li>
+<li>
+<p>Выборка из <code>EditionEditor</code> с <code>is_responsible_editor=True</code>.</p>
+</li>
+<li>
+<p><strong>Количество редакторов каждой книги:</strong></p>
+</li>
+<li>
+<p>Агрегирование по изданию в <code>EditionEditor</code> для подсчёта редакторов.</p>
+</li>
+<li>
+<p><strong>Количество контрактов за каждый месяц за истекший год:</strong></p>
+</li>
+<li>
+<p>Группировка по месяцу поля <code>date_signed</code> в <code>Contract</code>.</p>
+</li>
+<li>
+<p><strong>Список всех менеджеров, которые имеют максимальное количество контрактов за определённый период:</strong></p>
+</li>
+<li>
+<p>Агрегирование и фильтрация модели <code>Contract</code> по менеджерам и заданному периоду.</p>
+</li>
+<li>
+<p><strong>Отчёт о всех контрактах за каждый месяц истекшего квартала с указанием для каждого контракта наименования книги, количества авторов и редакторов, количества страниц, наличие иллюстраций; указать количество изданий за каждый месяц и общее количество за квартал:</strong></p>
+</li>
+<li>Комплексный запрос, объединяющий данные из моделей <code>Contract</code>, <code>Edition</code>, <code>Book</code>, <code>BookAuthor</code>, <code>EditionEditor</code>.</li>
+</ul>
+<h2 id="_6">Заключение</h2>
+<p>Система спроектирована в соответствии с требованиями задания и обеспечивает функциональность, необходимую для эффективного информационного обслуживания сотрудников типографии. Модели данных отражают все ключевые сущности и их взаимосвязи, позволяя хранить, обновлять и получать необходимую информацию, а также формировать разнообразные отчёты.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
