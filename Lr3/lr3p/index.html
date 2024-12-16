@@ -1045,19 +1045,22 @@ Hyundai: 2 cars
 Tesla: 1 cars
 </code></pre>
 <ol>
-<li>Сортировка списка владельцев по их именам:</li>
+<li>Сортировка всех автовладельцев по дате выдачи удостоверения:</li>
 </ol>
-<pre><code class="language-python">sorted_users = CustomUser.objects.order_by('username')
-for user in sorted_users:
-    print(user.username)
+<pre><code class="language-python"># Получение владельцев, отсортированных по дате выдачи удостоверения
+sorted_owners_by_license_date = CustomUser.objects.order_by('ownerships__start_date').distinct()
+
+# Вывод владельцев
+for owner in sorted_owners_by_license_date:
+    print(f&quot;{owner.username} - License Issue Date: {owner.ownerships.first().start_date}&quot;)
 </code></pre>
 <h3 id="_13">Результат</h3>
-<pre><code class="language-python">anna_kuznetsova
-elena_rogozina
-ivan_petrov
-olga_ivanova
-pavel_sidorov
-sergey_volkov
+<pre><code class="language-python">ivan_petrov - License Issue Date: 2024-01-01
+olga_ivanova - License Issue Date: 2024-02-01
+pavel_sidorov - License Issue Date: 2024-03-01
+anna_kuznetsova - License Issue Date: 2024-04-01
+sergey_volkov - License Issue Date: 2024-05-01
+elena_rogozina - License Issue Date: 2024-06-01
 </code></pre>
 
 
